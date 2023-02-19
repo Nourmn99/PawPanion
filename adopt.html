@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>PawPanion</title>
+</head>
+<body>
+<!--navigation and logo-->    
+    <div class="containerNavBgCat">
+        <div class="nav">
+            <nav class="nav">
+                <a class="logo" href="index.html"><img class="logo" src="Images/Logo paw.png" alt="PawPanion logo"></a>
+                <a class="linkNav" href="index.html">Home</a>
+                <a class="linkNav" href="Breeds.html">Common breeds</a>
+                <a class="linkNav" href="Before.html">Before you adopt</a>
+                <a class="linkNav" href="adopt.html">Adopt</a>
+                <a class="linkNav" href="game.html">Game</a>        
+            </nav>
+        </div>
+<!--Big cat picture and big logo and title page-->
+        <div class="container">
+            <div class="bgCat">
+                <div class="titleAdopt"><h1>Adopt</h1></div>
+                <img src="Images/Logo paw.png" alt="PawPanion logo">
+            </div>
+        </div>
+<!--Donation button-->
+        <div class="donate">
+            <a href="https://wearedreamcatchers.be/nl/donaties" target="_blank"><button class="block">Donate</button></a>
+        </div>
+    </div>
+<!--Adoption form and links or links to regions, depends on the time we have-->
+<div class="containerForm">
+<div class="findCat">
+    <form id="form">
+        <label for="Region" class="formLabel">Region</label>
+        <select name="region" id="region">
+            <option disabled hidden selected>Select</option>
+            <option value="1">West-Vlaanderen</option>
+            <option value="2">Vlaams-Brabant</option>
+            <option value="3">Oost-Vlaanderen</option>
+            <option value="4">Antwerpen</option>
+            <option value="5">Limburg</option>
+        </select>
+        <label for="gender" class="formLabel">Gender</label>
+        <select name="gender" id="gender">
+            <option disabled hidden selected>Select</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+        <label for="age" class="formLabel">Age</label>
+        <select name="age" id="age">
+            <option disabled hidden selected>Select</option>
+            <option value="junior">Junior</option>
+            <option value="kitten">Kitten</option>
+            <option value="ongekend">Ongekend</option>
+            <option value="senior">Senior</option>
+            <option value="volwassen">Volwassen</option>
+        </select>
+        <button type="submit" class="findBtn">Find cats</button>
+    </form>
+</div>
+</div>
+
+<script src="filter.js"></script>
+
+</body>
+</html>

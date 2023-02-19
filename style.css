@@ -1,0 +1,411 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+.containerNavBgCat{
+    height: 450px;
+    position: relative;
+}
+/*Navigatie*/
+.nav{
+    text-align: right;
+    background-color: rgba(192, 215, 187, 0.5);
+    height: 80px;
+    border-bottom: 4px solid #e18335;
+}
+.nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 80px;
+    font-family: 'Oswald', sans-serif;
+    color: #1D2B25;
+    font-size: larger;
+    font-weight: 600;
+}
+.linkNav:hover{
+    background-color:#e18335;
+    color: #F7F3E3;
+}
+.logo{
+    height: 80px;
+    float: left;
+}
+/*the container div to overlap background with the title*/
+.container{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+/*background cat picture*/
+.bgCat{
+    height: 400px;
+    background-image: url(Images/pexels-peng-louis-3073694.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -410px;
+    border-bottom: 4px solid #e18335;
+    position: relative;
+    z-index: -10;
+
+}
+.bgCat img{
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+/*Title of about, breeds, before, adopt, and game*/
+.titleAbout{
+    position:  absolute;
+    top: 360px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    color: #1D2B25;
+    background-color: #F7F3E3;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+.titleBreeds{
+    position:  absolute;
+    top: 360px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    color: #1D2B25;
+    background-color: #F7F3E3;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+}
+.titleBefore{
+    position:  absolute;
+    top: 360px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    color: #1D2B25;
+    background-color: #F7F3E3;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+}
+.titleAdopt{
+    position:  absolute;
+    top: 360px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    color: #1D2B25;
+    background-color: #F7F3E3;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+.titleGame{
+    position:  absolute;
+    top: 360px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    color: #1D2B25;
+    background-color: #F7F3E3;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+}
+/*Paragraph with about us content, info about the website*/
+.aboutUs{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    color: #1D2B25;
+    text-align: center;
+    width: 700px;
+    height: 200px;
+    padding: 20px 20px 20px 20px;
+    margin: 50px auto 20px auto;
+    background-color: #F7F3E3;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+}
+
+/*Content of the breeds*/
+.container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #F7F3E3;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 100px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+    
+}
+
+.card h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #1D2B25;
+}
+
+.card p{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: #1D2B25;
+}
+
+.card img{
+    border-radius: 7px;
+}
+
+/*Positioning of the game*/
+#wrap {
+    margin-top: 20px;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+  }
+
+/*Form for adopt a cat*/
+.containerForm{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+.findCat{
+    background-color: #F7F3E3;
+    width: 35%;
+    margin: 30px 50px 20px 50px;
+    padding: 15px 50px 15px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+   
+}
+
+.formLabel{
+    flex-basis: auto;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    color: #1D2B25;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#region{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 0 0 5px;
+    box-shadow: 1px 1px 5px rgb(85, 85, 85);
+    border: 0;
+    border-radius: 3px;
+    font-family: 'Oswald', sans-serif;
+    font-size: large; 
+    color: #2b4141;
+}
+
+#gender{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 0 0 5px;
+    box-shadow: 1px 1px 5px rgb(85, 85, 85);
+    border: 0;
+    border-radius: 3px;
+    font-family: 'Oswald', sans-serif;
+    font-size: large; 
+    color: #2b4141;
+}
+
+#age{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 0 0 5px;
+    box-shadow: 1px 1px 5px rgb(85, 85, 85);
+    border: 0;
+    border-radius: 3px;
+    font-family: 'Oswald', sans-serif;
+    font-size: large; 
+    color: #2b4141;
+}
+
+option{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    color: #2b4141;
+}
+
+.findBtn{
+    font-family: 'Oswald', sans-serif;
+    font-size: larger;
+    width: 20%;
+    margin: 15px 0 15px 0;
+    padding: 10px;
+    background-color: #c0d7bb;
+    color: #1D2B25;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgb(85, 85, 85);
+}
+
+.findBtn:hover{
+    background-color: #e18335;
+    color: #F7F3E3;
+}
+/*Donation button*/
+.donate{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: end;
+    align-items: flex-end;
+}
+.donate a{
+    text-decoration: none;
+}
+.block {
+    display: block;
+    width: 80;
+    border: none;
+    background-color: #c0d7bb;
+    color: #2b4141;
+    padding: 14px 28px;
+    margin-right: 40px;
+    margin-top: 230px;
+    font-size: larger;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);;
+}
+  
+.block:hover {
+    background-color: #e18335;
+    color: #F7F3E3;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.rectangle {
+    border-radius: 1px;
+    background-color: #F7F3E3;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 10px 10px 10px 10px;
+    margin-top: 100px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+    border-radius: 10px;
+}
+
+.rectangle p{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: #1D2B25;
+}
+
+.rectangle h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #1D2B25;
+}
+
+.rectangle ul{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: #1D2B25;
+    list-style: none;
+
+}
+
+.catcarrier{
+    width: 200px;
+    height: 300px;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.bed{
+    width: 100px;
+    height: 200px;
+    background-color: rgb(27, 82, 119);
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.toy{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(27, 82, 119);
+    display: flex;
+    justify-content: space-between;
+}
+
+.one{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+}
